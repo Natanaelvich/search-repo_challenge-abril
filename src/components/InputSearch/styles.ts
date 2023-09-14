@@ -14,9 +14,7 @@ export const Input = styled.TextInput`
   flex: 1;
 
   color: rgba(60, 60, 67, 0.6);
-  /* font-family: SF Pro Text; */
   font-size: 17px;
-  font-style: normal;
   font-weight: 400;
   letter-spacing: -0.408px;
 `;

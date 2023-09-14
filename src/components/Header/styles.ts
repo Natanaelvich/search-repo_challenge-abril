@@ -16,10 +16,8 @@ export const WrapperIcon = styled.TouchableOpacity.attrs({
 
 export const Title = styled.Text`
   color: #000;
-  /* font-family: SF Pro Text; */
   font-size: 16px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   letter-spacing: -0.38px;
 `;

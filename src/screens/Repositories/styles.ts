@@ -13,12 +13,10 @@ export const Container = styled(Animated.View).attrs({
 `;
 
 export const Title = styled.Text`
-  color: #000;
-  /* font-family: SF Pro Display; */
+  color: #111;
   font-size: 34px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 41px; /* 120.588% */
+  line-height: 41px;
   margin-bottom: 16px;
 `;
 
@@ -38,13 +36,12 @@ export const Separator = styled.View`
 
 export const Loading = styled.ActivityIndicator.attrs({
   size: 'large',
-  color: '#000',
+  color: '#48484a',
 })``;
 
 export const Empty = styled.Text`
-  color: #000;
+  color: #48484a;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 19px;
   text-align: center;
@@ -52,9 +49,8 @@ export const Empty = styled.Text`
 `;
 
 export const Error = styled.Text`
-  color: #000;
+  color: #48484a;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 19px;
   text-align: center;

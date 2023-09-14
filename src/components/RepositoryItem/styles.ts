@@ -22,32 +22,29 @@ export const WrapperDesc = styled.View`
   gap: 1px;
 `;
 
-export const Title = styled.Text`
+export const Title = styled.Text.attrs({
+  numberOfLines: 1,
+})`
   color: #000;
-  /* font-family: SF Pro Text; */
   font-size: 16px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   letter-spacing: -0.38px;
+  max-width: 90%;
 `;
 
 export const Owner = styled.Text`
-  /* color: var(--default-system-gray-03-dark, #48484a); */
-  font-family: SF Pro Text;
+  color: #48484a;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
 `;
 
 export const NumberStars = styled.Text`
-  /* color: var(--default-system-gray-03-dark, #48484A); */
-  font-family: SF Pro Text;
+  color: #48484a;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 128.571% */
+  line-height: 18px;
   letter-spacing: -0.078px;
   margin-left: auto;
   align-self: flex-start;
