@@ -50,4 +50,45 @@ https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/aece
 - Redux Toolkit
 - Redux Saga
 
+## How to run
+
+```bash
+yarn install
+```
+
+```bash
+yarn android
+```
+
+```bash
+yarn ios
+```
+
+### Tests
+
+```bash
+yarn test
+```
+
+```bash
+yarn test:e2e
+```
+
+## Observação
+
+- Devido ao tempo do dia dia, foquei em desenvolver a aplicação com o mínimo de funcionalidades possíveis, porém com uma boa estrutura de código e testes. Por isso, não foi possível adicionar todas as funcionalidades que eu gostaria, mas listo abaixo algumas que eu gostaria de ter adicionado.
+
+## Pontos de melhoria
+
+- [ ] Adicionar mais testes para todos os componentes
+- [ ] Adicionar testes para os sagas
+- [ ] Adicionar testes para os reducers
+- [ ] Adicionar testes de integração
+- [ ] Adicionar componentes primivos como botões, inputs, etc
+- [ ] Adicionar tema com cores, fontes, espaçamentos, etc
+- [ ] Adicionar responsividade para fontes, espaçamentos, etc
+- [ ] Adicionar fontes customizadas
+- [ ] Adicionar icone e splash screen
+
+... entre outros
 
