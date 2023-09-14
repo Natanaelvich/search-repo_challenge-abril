@@ -1,2 +1,2 @@
 export {Repositories} from './Repositories';
-export {RepoDetails} from './RepoDetails';
+export {RepositoryDetails} from './RepositoryDetails';

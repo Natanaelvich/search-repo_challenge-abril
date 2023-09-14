@@ -1,7 +1,7 @@
 import {Header} from '../../components';
 import * as S from './styles';
 
-export const RepoDetails = () => {
+export const RepositoryDetails = () => {
   return (
     <S.Container>
       <Header title="React" />

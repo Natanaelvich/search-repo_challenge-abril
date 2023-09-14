@@ -8,7 +8,7 @@ type Props = {
   onPress: () => void;
 };
 
-export const RepoItem = ({title, owner, stars, image, onPress}: Props) => {
+export const RepositoryItem = ({title, owner, stars, image, onPress}: Props) => {
   return (
     <S.Container onPress={onPress}>
       <S.Image source={{uri: image}} />

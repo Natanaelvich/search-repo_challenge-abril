@@ -1,7 +1,7 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import {Repositories, RepoDetails} from './screens';
+import {Repositories, RepositoryDetails} from './screens';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,8 +15,8 @@ export default function Routes() {
           options={{headerShown: false}}
         />
         <Stack.Screen
-          name="RepoDetails"
-          component={RepoDetails}
+          name="RepositoryDetails"
+          component={RepositoryDetails}
           options={{
             headerShown: false,
           }}
