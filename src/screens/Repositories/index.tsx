@@ -31,7 +31,7 @@ export const Repositories = () => {
   }, [dispatch, query]);
 
   const loadMore = () => {
-    if (loading) {
+    if (loading || repositories.length < 10) {
       return;
     }
 
