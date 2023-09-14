@@ -10,11 +10,9 @@ import {AxiosResponse} from 'axios';
 
 type PayloadActionType = PayloadAction<string>;
 
-// Generator function
 function* getRepositoriesSaga(action: PayloadActionType) {
   try {
-    // You can also export the axios call as a function.
-    const response: AxiosResponse<Repository[]> = yield api.get('', {
+    const response: AxiosResponse<{items: Repository[]}> = yield api.get('', {
       params: {
         q: action.payload,
         per_page: 10,
@@ -22,7 +20,7 @@ function* getRepositoriesSaga(action: PayloadActionType) {
       },
     });
 
-    yield put(getRepositoriesSuccessAction(response.data));
+    yield put(getRepositoriesSuccessAction(response.data.items));
   } catch (error) {
     yield put(getRepositoriesFailureAction());
   }
