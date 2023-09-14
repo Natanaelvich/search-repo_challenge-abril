@@ -35,7 +35,8 @@ This project was developed as a challenge for Abril. It is a mobile application 
 
 ### E2E tests
 
-https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/aece9bf0-3ecb-4e84-990b-65d99f3793e1
+https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/f6a6cbf0-0908-4972-bd8d-20d5493be8dc
+
 
 ## Technologies
 
