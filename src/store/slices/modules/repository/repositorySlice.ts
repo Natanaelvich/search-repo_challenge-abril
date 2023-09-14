@@ -9,6 +9,7 @@ export type Repository = {
     avatar_url: string;
   };
   stargazers_count: number;
+  html_url: string;
 };
 
 export type RepositoryState = {
