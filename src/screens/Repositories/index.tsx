@@ -1,22 +1,37 @@
 import {useNavigation} from '@react-navigation/native';
 import {InputSearch, RepoItem} from '../../components';
 import * as S from './styles';
+import {useAppDispatch, useAppSelector} from '../../store';
+import {getRepositoriesAction} from '../../store/slices/modules/repository/repositorySlice';
+import {useEffect, useState} from 'react';
 
 export const Repositories = () => {
   const navigation = useNavigation();
+  const dispatch = useAppDispatch();
+  const {repositories} = useAppSelector(state => state.repository);
+
+  const [query, setQuery] = useState('');
 
   const handleRepoDetails = () => {
     navigation.navigate('RepoDetails');
   };
 
+  useEffect(() => {
+    const delayDebounceFn = setTimeout(() => {
+      dispatch(getRepositoriesAction('react'));
+    }, 1000);
+
+    return () => clearTimeout(delayDebounceFn);
+  }, [dispatch, query]);
+
   return (
     <S.Container>
       <S.Title>Repositórios</S.Title>
 
-      <InputSearch />
+      <InputSearch onChangeText={setQuery} value={query} />
 
       <S.ListRepositories
-        data={[1, 2, 3, 4, 5, 6, 7, 8, 9]}
+        data={repositories}
         keyExtractor={item => String(item)}
         renderItem={() => (
           <RepoItem
