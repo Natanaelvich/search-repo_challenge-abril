@@ -33,7 +33,6 @@ This project was developed as a challenge for Abril. It is a mobile application 
 
 https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/f6a6cbf0-0908-4972-bd8d-20d5493be8dc
 
-
 ## Technologies
 
 - React Native
@@ -46,6 +45,9 @@ https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/f6a6
 - Styled Components
 - Redux Toolkit
 - Redux Saga
+- React Redux
+- React Native WebView
+- React Native Reanimated
 
 ## Requirements
 
