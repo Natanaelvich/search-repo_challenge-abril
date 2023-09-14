@@ -1,24 +1,22 @@
+import {Repository} from '../../store/slices/modules/repository/repositorySlice';
 import * as S from './styles';
 
 type Props = {
-  title: string;
-  owner: string;
-  stars: number;
-  image: string;
+  repository: Repository;
   onPress: () => void;
 };
 
-export const RepositoryItem = ({title, owner, stars, image, onPress}: Props) => {
+export const RepositoryItem = ({repository, onPress}: Props) => {
   return (
     <S.Container onPress={onPress}>
-      <S.Image source={{uri: image}} />
+      <S.Image source={{uri: repository.owner.avatar_url}} />
 
       <S.WrapperDesc>
-        <S.Title>{title}</S.Title>
-        <S.Owner>{owner}</S.Owner>
+        <S.Title>{repository.name}</S.Title>
+        <S.Owner>{repository.owner.login}</S.Owner>
       </S.WrapperDesc>
 
-      <S.NumberStars>{stars} stars</S.NumberStars>
+      <S.NumberStars>{repository.stargazers_count} stars</S.NumberStars>
     </S.Container>
   );
 };
