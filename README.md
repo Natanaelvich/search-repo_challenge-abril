@@ -18,6 +18,8 @@ This project was developed as a challenge for Abril. It is a mobile application 
 
 ### Unit tests
 
+![image](https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/65d653b6-0785-494b-876e-6bd7515043ee)
+
 ### E2E tests
 
 
