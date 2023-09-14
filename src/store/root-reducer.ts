@@ -1,4 +1,4 @@
-import {repositoryReducer} from './slices/modules/repository/repositorySlice';
+import {repositoryReducer} from './modules/repository/repositorySlice';
 
 const rootReducers = {
   repository: repositoryReducer,

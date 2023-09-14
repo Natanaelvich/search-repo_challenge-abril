@@ -1,7 +1,7 @@
 import {FlatList} from 'react-native';
 import styled from 'styled-components/native';
 import {safeTopArea} from '../../utils/safeArea';
-import {Repository} from '../../store/slices/modules/repository/repositorySlice';
+import {Repository} from '../../store/modules/repository/repositorySlice';
 
 export const Container = styled.View`
   flex: 1;

@@ -1,4 +1,4 @@
-import {Repository} from '../../store/slices/modules/repository/repositorySlice';
+import {Repository} from '../../store/modules/repository/repositorySlice';
 import * as S from './styles';
 
 type Props = {

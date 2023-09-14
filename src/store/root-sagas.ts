@@ -1,5 +1,5 @@
 import {all, fork} from 'redux-saga/effects';
-import {watchGetRepositories} from './slices/modules/repository/repositorySagas';
+import {watchGetRepositories} from './modules/repository/repositorySagas';
 
 const rootSaga = function* () {
   yield all([fork(watchGetRepositories)]);

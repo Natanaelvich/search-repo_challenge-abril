@@ -2,7 +2,7 @@ import {useNavigation} from '@react-navigation/native';
 import {InputSearch, RepositoryItem} from '../../components';
 import * as S from './styles';
 import {useAppDispatch, useAppSelector} from '../../store';
-import {getRepositoriesAction} from '../../store/slices/modules/repository/repositorySlice';
+import {getRepositoriesAction} from '../../store/modules/repository/repositorySlice';
 import {useEffect, useState} from 'react';
 
 export const Repositories = () => {

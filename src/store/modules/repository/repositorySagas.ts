@@ -1,12 +1,12 @@
 import {PayloadAction} from '@reduxjs/toolkit';
 import {put, takeLatest} from 'redux-saga/effects';
-import api from '../../../../services/api';
 import {
   getRepositoriesSuccessAction,
   getRepositoriesFailureAction,
   Repository,
 } from './repositorySlice';
 import {AxiosResponse} from 'axios';
+import api from '../../../services/api';
 
 type PayloadActionType = PayloadAction<string>;
 

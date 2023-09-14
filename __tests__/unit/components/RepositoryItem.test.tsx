@@ -7,10 +7,17 @@ describe('Component: RepositoryItem', () => {
   it('should be render RepositoryItem', () => {
     render(
       <RepositoryItem
-        image="https://avatars.githubusercontent.com/u/69631?v=4"
-        title="react"
-        owner="facebook"
-        stars={158000}
+        repository={{
+          id: 10270250,
+          html_url:
+            'https://github.com/Natanaelvich/devmetrics_show-case-expo-router',
+          name: 'devmetrics_show-case-expo-router',
+          owner: {
+            login: 'Natanaelvich',
+            avatar_url: 'https://avatars.githubusercontent.com/u/69631?v=4',
+          },
+          stargazers_count: 158000,
+        }}
         onPress={() => {}}
       />,
     );
