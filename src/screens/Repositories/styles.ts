@@ -1,6 +1,6 @@
 import {FlatList} from 'react-native';
 import styled from 'styled-components/native';
-import {safeTopArea} from '../../utils/safeArea';
+import {safeBottomArea, safeTopArea} from '../../utils/safeArea';
 import {Repository} from '../../store/modules/repository/repositorySlice';
 
 export const Container = styled.View`
@@ -36,9 +36,7 @@ export const Separator = styled.View`
 export const Loading = styled.ActivityIndicator.attrs({
   size: 'large',
   color: '#000',
-})`
-  margin-top: 16px;
-`;
+})``;
 
 export const Empty = styled.Text`
   color: #000;
@@ -58,4 +56,10 @@ export const Error = styled.Text`
   line-height: 19px;
   text-align: center;
   margin-top: 16px;
+`;
+
+export const WrapperLoadMore = styled.View`
+  padding: 16px 16px ${safeBottomArea + 16}px;
+  align-items: center;
+  justify-content: center;
 `;

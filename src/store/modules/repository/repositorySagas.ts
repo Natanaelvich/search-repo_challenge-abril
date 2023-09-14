@@ -8,19 +8,34 @@ import {
 import {AxiosResponse} from 'axios';
 import api from '../../../services/api';
 
-type PayloadActionType = PayloadAction<string>;
+type PayloadActionType = PayloadAction<{q: string; page: number}>;
 
-function* getRepositoriesSaga(action: PayloadActionType) {
+function* getRepositoriesSaga({payload: {page, q}}: PayloadActionType) {
   try {
     const response: AxiosResponse<{items: Repository[]}> = yield api.get('', {
       params: {
-        q: action.payload,
+        q,
+        page,
         per_page: 10,
-        page: 1,
       },
     });
 
-    yield put(getRepositoriesSuccessAction(response.data.items));
+    if (page > 1) {
+      yield put(
+        getRepositoriesSuccessAction({
+          repositories: response.data.items,
+          increment: true,
+        }),
+      );
+      return;
+    }
+
+    yield put(
+      getRepositoriesSuccessAction({
+        repositories: response.data.items,
+        increment: false,
+      }),
+    );
   } catch (error) {
     yield put(getRepositoriesFailureAction());
   }

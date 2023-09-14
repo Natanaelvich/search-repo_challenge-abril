@@ -28,16 +28,21 @@ export const repositorySlice = createSlice({
   name: 'repository',
   initialState,
   reducers: {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    getRepositoriesAction: (state, action: PayloadAction<string>) => {
+    getRepositoriesAction: (
+      state,
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      action: PayloadAction<{q: string; page: number}>,
+    ) => {
       state.loading = true;
       state.error = false;
     },
     getRepositoriesSuccessAction: (
       state,
-      action: PayloadAction<Repository[]>,
+      action: PayloadAction<{repositories: Repository[]; increment?: boolean}>,
     ) => {
-      state.repositories = action.payload;
+      state.repositories = action.payload.increment
+        ? [...state.repositories, ...action.payload.repositories]
+        : action.payload.repositories;
       state.loading = false;
       state.error = false;
     },

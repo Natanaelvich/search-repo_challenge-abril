@@ -13,6 +13,7 @@ export const Repositories = () => {
   );
 
   const [query, setQuery] = useState('');
+  const [page, setPage] = useState(1);
 
   const handleRepositoryDetails = (html_url: string, name: string) => {
     navigation.navigate('RepositoryDetails', {html_url, name});
@@ -21,12 +22,27 @@ export const Repositories = () => {
   useEffect(() => {
     const delayDebounceFn = setTimeout(() => {
       if (query) {
-        dispatch(getRepositoriesAction(query));
+        setPage(1);
+        dispatch(getRepositoriesAction({q: query, page: 1}));
       }
     }, 1000);
 
     return () => clearTimeout(delayDebounceFn);
   }, [dispatch, query]);
+
+  const loadMore = () => {
+    if (loading) {
+      return;
+    }
+
+    const nextPage = page + 1;
+
+    setPage(nextPage);
+
+    if (query) {
+      dispatch(getRepositoriesAction({q: query, page: nextPage}));
+    }
+  };
 
   const renderEmpty = () => {
     if (loading) {
@@ -43,6 +59,14 @@ export const Repositories = () => {
 
     if (!loading && !error) {
       return <S.Empty>Nenhum repositório encontrado</S.Empty>;
+    }
+
+    return null;
+  };
+
+  const renderLoadMore = () => {
+    if (loading && repositories.length > 0) {
+      return <S.Loading />;
     }
 
     return null;
@@ -65,6 +89,9 @@ export const Repositories = () => {
         )}
         ItemSeparatorComponent={() => <S.Separator />}
         ListEmptyComponent={renderEmpty}
+        ListFooterComponent={renderLoadMore}
+        onEndReached={loadMore}
+        onEndReachedThreshold={0.1}
       />
     </S.Container>
   );
