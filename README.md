@@ -50,6 +50,15 @@ https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/aece
 - Redux Toolkit
 - Redux Saga
 
+## Requirements
+
+- Node.js
+- Yarn
+- React Native CLI
+- Android Studio
+- Xcode
+- Maestro (To run E2E tests) [Maestro Docs](https://maestro.mobile.dev/)
+
 ## How to run
 
 ```bash
