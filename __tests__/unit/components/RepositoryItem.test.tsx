@@ -22,8 +22,8 @@ describe('Component: RepositoryItem', () => {
       />,
     );
 
-    expect(screen.getByText('react')).toBeTruthy();
-    expect(screen.getByText('facebook')).toBeTruthy();
+    expect(screen.getByText('devmetrics_show-case-expo-router')).toBeTruthy();
+    expect(screen.getByText('Natanaelvich')).toBeTruthy();
     expect(screen.getByText('158000 stars')).toBeTruthy();
   });
 });
