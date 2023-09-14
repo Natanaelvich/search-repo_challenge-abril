@@ -8,6 +8,11 @@ This project was developed as a challenge for Abril. It is a mobile application 
 ## Screenshots 📸
 
 ### Android
+
+![Screenshot_1694697764](https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/4764c01a-73f1-4237-ae36-14cc78cf9140)
+![Screenshot_1694697692](https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/5bf8c31d-00db-4e3f-a6fe-7c227daa78f9)
+![Screenshot_1694697443](https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/2cf024c2-8167-4b2c-8ac7-51ba9353548e)
+
 <p align="center">
  <img  src="https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/9518cbe9-44bf-45ad-9468-b5715234b420"
     width="200px">
@@ -18,6 +23,11 @@ This project was developed as a challenge for Abril. It is a mobile application 
 </p>
 
 ### iOS
+![Simulator Screenshot - iPhone 14 - 2023-09-14 at 09 51 13](https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/537d47ba-9b44-4da6-93ae-93a2e39f9d12)
+![Simulator Screenshot - iPhone 14 - 2023-09-14 at 09 51 04](https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/a6cf352f-4b80-4c73-9bb9-54ef6feffb94)
+![Simulator Screenshot - iPhone 14 - 2023-09-14 at 10 23 47](https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/b50d2780-fbdf-4999-9c03-8b97c5696db8)
+
+
 <p align="center">
  <img  src="https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/7d2b8cca-7fc4-4917-89e5-a719795406c1"
     width="200px">
