@@ -1,13 +1,15 @@
+import Animated from 'react-native-reanimated';
 import styled from 'styled-components/native';
 
-export const Container = styled.TouchableOpacity.attrs({
-  activeOpacity: 0.7,
-})`
-  flex-direction: row;
-  align-items: center;
-  gap: 16px;
-  padding: 16px 0;
-`;
+export const Container =
+  Animated.createAnimatedComponent(styled.TouchableOpacity.attrs({
+    activeOpacity: 0.7,
+  })`
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+  `);
 
 export const Image = styled.Image`
   border-radius: 26px;

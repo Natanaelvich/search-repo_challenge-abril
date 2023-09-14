@@ -2,8 +2,11 @@ import {FlatList} from 'react-native';
 import styled from 'styled-components/native';
 import {safeBottomArea, safeTopArea} from '../../utils/safeArea';
 import {Repository} from '../../store/modules/repository/repositorySlice';
+import Animated, {FadeInUp} from 'react-native-reanimated';
 
-export const Container = styled.View`
+export const Container = styled(Animated.View).attrs({
+  entering: FadeInUp,
+})`
   flex: 1;
   padding: ${safeTopArea + 19}px 16px 0;
   background: #fff;
