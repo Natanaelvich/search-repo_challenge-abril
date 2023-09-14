@@ -8,16 +8,23 @@ This project was developed as a challenge for Abril. It is a mobile application 
 ## Screenshots 📸
 
 ### Android
-![Screenshot_1694697443](https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/9518cbe9-44bf-45ad-9468-b5715234b420)
-![Screenshot_1694697692](https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/55a1276d-5c9f-4a97-bcbd-64d6a4c46f43)
-![Screenshot_1694697764](https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/3d09b0fd-1788-4965-85fa-0da574a07f4c)
+<p align="center">
+ <img  src="https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/9518cbe9-44bf-45ad-9468-b5715234b420"
+    width="200px">
+    <img  src="https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/55a1276d-5c9f-4a97-bcbd-64d6a4c46f43""
+    width="200px">
+    <img  src="https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/3d09b0fd-1788-4965-85fa-0da574a07f4c""
+    width="200px">
+</p>
 
 ### iOS
 <p align="center">
-![Simulator Screenshot - iPhone 14 - 2023-09-14 at 10 23 47](https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/7d2b8cca-7fc4-4917-89e5-a719795406c1)
-![Simulator Screenshot - iPhone 14 - 2023-09-14 at 10 23 59](https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/176046f4-5079-4052-b7a7-49c4f7f6cf12)
-![Simulator Screenshot - iPhone 14 - 2023-09-14 at 10 24 04](https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/83e44387-fb2f-475a-a656-037726e0aa3e)
-
+ <img  src="https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/7d2b8cca-7fc4-4917-89e5-a719795406c1"
+    width="200px">
+ <img  src="https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/176046f4-5079-4052-b7a7-49c4f7f6cf12"
+    width="200px">
+ <img  src="https://github.com/Natanaelvich/search-repo_challenge-abril/assets/52014318/83e44387-fb2f-475a-a656-037726e0aa3e"
+    width="200px">
 </p>
 
 ## Tests 🧪
