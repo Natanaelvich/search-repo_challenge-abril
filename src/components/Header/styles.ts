@@ -3,7 +3,7 @@ import {safeTopArea} from '../../utils/safeArea';
 
 export const Container = styled.View`
   background: rgba(249, 249, 249, 0.8);
-  padding: ${safeTopArea}px 12px 12px;
+  padding: ${safeTopArea + 12}px 12px 12px;
   flex-direction: row;
   align-items: center;
   gap: 14px;
