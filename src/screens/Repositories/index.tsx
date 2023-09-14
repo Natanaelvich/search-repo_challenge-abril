@@ -74,9 +74,11 @@ export const Repositories = () => {
 
   return (
     <S.Container>
-      <S.Title>Repositórios</S.Title>
+      <S.Header>
+        <S.Title>Repositórios</S.Title>
 
-      <InputSearch onChangeText={setQuery} value={query} />
+        <InputSearch onChangeText={setQuery} value={query} />
+      </S.Header>
 
       <S.ListRepositories
         data={repositories}

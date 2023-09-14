@@ -8,8 +8,12 @@ export const Container = styled(Animated.View).attrs({
   entering: FadeInUp,
 })`
   flex: 1;
-  padding: ${safeTopArea + 19}px 16px 0;
+  padding: ${safeTopArea + 19}px 0 0;
   background: #fff;
+`;
+
+export const Header = styled.View`
+  padding: 0 16px;
 `;
 
 export const Title = styled.Text`
@@ -24,6 +28,7 @@ export const ListRepositories = styled(FlatList<Repository>).attrs({
   contentContainerStyle: {
     flexGrow: 1,
     gap: 16,
+    paddingHorizontal: 16,
     paddingTop: 41,
   },
 })``;
